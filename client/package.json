@@ -1,0 +1,12 @@
+{
+    "name": "ic-1-server",
+    "version": "1.0.0",
+    "description": "Local web server for IC 1",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "^4.15.2"
+    }
+}

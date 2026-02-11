@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+    color:darkred
+}
+.ThingyWithMyName {
+    font-size: 75px;
+}
+.gradDate h2 {
+    color: darkgreen;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#image-wrapper {
+    padding: 20px;
+}
+#image-wrapper img {
+    width: 300px;
+}
+
+h3:hover {
+    color: purple
+}

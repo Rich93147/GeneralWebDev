@@ -1,0 +1,91 @@
+<!-- IC8 – COSC 2328-1 – Professor McCurry -->
+<!-- Implemented by: Richard Walker -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IC8 - Tables</title>
+
+  <link rel="stylesheet" href="css/ic8.css">
+</head>
+<body>
+
+  <h1>IC8: Course Schedule</h1>
+  <h2>COSC 2328 Weekly Schedule</h2>
+
+  <table>
+    <caption>Spring 2026 Course Schedule</caption>
+
+    <thead>
+      <tr>
+        <th>Week</th>
+        <th>Topic</th>
+        <th>Lab</th>
+        <th>Due Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Week 1</td>
+        <td>HTML Fundamentals</td>
+        <td>Lab 1</td>
+        <td>Jan 20</td>
+      </tr>
+      <tr>
+        <td>Week 2</td>
+        <td>CSS Styling</td>
+        <td>Lab 2</td>
+        <td>Jan 27</td>
+      </tr>
+      <tr>
+        <td>Week 3</td>
+        <td>Tables &amp; Forms</td>
+        <td>Lab 3</td>
+        <td>Feb 3</td>
+      </tr>
+      <tr>
+        <td>Week 4</td>
+        <td>JavaScript Basics</td>
+        <td>Lab 4</td>
+        <td>Feb 10</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Schedule subject to change</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
+
+<!-- Student Contact Form-->
+ <h2>Student Contact Form</h2>
+ <form action="https://httpbin.org/post" method="post">
+    <!-- Step 5: Create fieldset and legend-->
+     <fieldset>
+        <legend> Your Information</legend>
+        <!-- Step 8: Add form fields-->
+
+        <!-- Step 8.1: Full Name Fields-->
+        <label for="fullname"> First Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <!-- Step 8.2: Email Field-->
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>4
+
+        <!-- Step 8.3: Student ID Field with pattern validation-->
+        <label for="student-id"> Student ID:</label>
+        <input type="text" id="student-id" name="student-id" pattern="[0-9]{7}" placeholder="1234567" required>
+
+     </fieldset>
+
+     <button type="submit"> Submit Information</button>
+</body>
+</html>

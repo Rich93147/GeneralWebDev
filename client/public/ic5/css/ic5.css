@@ -1,0 +1,21 @@
+body {
+  font-family: Georgia;
+  background-color: #e6f3fa;
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+    color: #502c49;
+    border-bottom: 2px solid #a9db34;
+    padding-bottom: 10px;
+}
+p {
+    margin-bottom: 15px
+}
+.ottawa-pic {
+    display: block;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

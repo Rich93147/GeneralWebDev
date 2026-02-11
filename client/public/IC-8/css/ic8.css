@@ -1,0 +1,70 @@
+/* IC8 – COSC 2328-1 – Professor McCurry */
+/* Implemented by: Richard Walker */
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tfoot {
+  font-style: italic;
+  text-align: center;
+  background-color: #e8e8e8;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* IC08 - COSC 2328-1 - Professor McCurry */
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+input:invalid {
+    border-color: #dc3545;
+}
+
+/* Validation state styling - Valid inputs */
+input:valid {
+    border-color: #28a745;
+}
