@@ -1,0 +1,9 @@
+1. SSH is a cryptographic network protocol used for securely managing remote servers like our digital ocean. We used it because it provides a highly secure and encrypted way to access our droplets.
+2. We did it for security, as using the default username can cause your droplet to get compromised.
+3. The 80 port part will show the "outside world" that we're using port 80, but inside the docker container, we're actually using port 3000, assumingly for security reasons.
+4. For security reasons like blocking unauthorized network access and only allowing necessary or secure traffic, like ssh.
+5. Running the server locally allows for complete control and low cost to your system, while running it on a droplet allows for greater reliability and accessibility. If you run the server on your system, everything you do has to be from your system and nowhere else. If it's on the droplet, then you can do it from another machine, or have someone else that you trust run it aswell.
+6. Docker is used to "send images", aka sending a program or file with the exact same setup that you have to another machine. A program that works perfectly on your system might not for another, so it sends every file you have exactly to another system or server (like our droplet). This way, it'll run perfectly every time no matter where you run it.
+7. The dockerfile in this deployment is, for the same reason I described in 6., to create a consistent and working environment for our server to fetch our files from.
+
+Link to my ic-1.txt file on the droplet: http://157.230.134.46:8080/ic-1.txt
