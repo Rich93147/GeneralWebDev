@@ -1,0 +1,62 @@
+<!-- HW4 – COSC 2328 – Richard Walker-->
+ <DOCTYPE>
+    <html lang="eng">
+        <head>
+            <link rel="stylesheet" href="css/hw4.css">
+            <title> FutureWeb 2026 </title>
+        </head>
+        <body> 
+            <header>
+                <h1> FutureWeb 2026 </h1>
+                <p> Something tagline </p> 
+            </header>
+            <main class ="container">
+                <div class="event-info">
+                    <h2> Event Details </h2>
+                    <ul>
+                        <li> something something </li>
+                    </ul>
+                </div>
+                <div class = "registration-form">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend> Attendee Details </legend>
+
+                            <label for="name"> Name </label>
+                            <input type= "text" id="name" name="name" required>
+
+                            <label for="email"> Email </label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="arrival"> Date of Arrival </label>
+                            <input type="date" id="arrival" name="arrival" required>
+                        </fieldset>
+
+                        <fieldset>
+                        <legend>Session Preferences</legend>
+
+                        <label for="track">Track Selection</label>
+                        <select id="track" name="track" required>
+                            <optgroup label="Frontend">
+                            <option value="react">React</option>
+                            <option value="vue">Vue</option>
+                            <option value="css">CSS</option>
+                            </optgroup>
+                            <optgroup label="Backend">
+                            <option value="node">Node.js</option>
+                            <option value="python">Python</option>
+                            <option value="docker">Docker</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="resume">Upload Resume/Portfolio</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.docx">
+                        </fieldset>
+
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </main>
+        </body>
+    </html>
+ </DOCTYPE>

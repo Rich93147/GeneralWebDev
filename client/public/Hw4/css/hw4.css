@@ -1,0 +1,73 @@
+/* HW4 – COSC 2328 – Richard Walker*/
+
+.container {
+    max-width: 20px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.event-info {
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+
+legend {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+select:focus {
+    border-color: #2563eb;
+}
+
+button[type="submit"] {
+    background-color: red;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: blue
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .event-info img {
+    max-width: 100%;
+  }
+}
