@@ -1,0 +1,44 @@
+/* HW5 – COSC 2328 – Professor McCurry */
+/* Implemented by: Richard Walker */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0,.2);
+}
+
+.container{
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0,.3);
+}
+
+.instructions {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    border-left: 4px solid #667eea;
+}
+
+ul {
+    padding: 2rem;
+}
