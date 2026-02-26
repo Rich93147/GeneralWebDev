@@ -1,0 +1,53 @@
+<!-- IC13 – COSC 2328-1 – Professor McCurry -->
+<!-- Implemented by: Richard Walker -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC13: Event Handling Workshop</title>
+    <link rel="stylesheet" href="css/ic13-style.css">
+    <script src="js/ic13-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Order Form</h1>
+    </header>
+    
+    <main id="app-container">
+        <div id="product-gallery">
+            <div class="product-card" data-product-name="Laptop" data-price="999">
+                <h3>Laptop</h3>
+                <p class="price">$999</p>
+            </div>
+            <div class="product-card" data-product-name="Headphones" data-price="199">
+                <h3>Headphones</h3>
+                <p class="price">$199</p>
+            </div>
+        </div>
+
+        <form id="order-form">
+            <h2>Order Details</h2>
+            
+            <div class="form-group">
+                <label for="product-name">Selected Product:</label>
+                <input type="text" id="product-name" name="product-name" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="promo-code">Promo Code:</label>
+                <input type="text" id="promo-code" name="promo-code" placeholder="Try: SAVE10">
+                <p id="promo-message"></p>
+            </div>
+
+            <button type="submit" id="submit-btn">Place Order</button>
+        </form>
+
+        <div id="order-summary">
+            <h2>Order Summary</h2>
+            <p id="summary-product">No product selected</p>
+            <p id="summary-total">Total: $0</p>
+        </div>
+    </main>
+</body>
+</html>
