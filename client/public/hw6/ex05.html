@@ -1,0 +1,56 @@
+<!-- HW6 – COSC 2328-1 – Professor McCurry -->
+<!-- Implemented by: Richard Walker -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title> HW6 - Product Calculator</title>
+            <link rel="stylesheet" href="css/ex05-style.css">
+            <script defer src="js/ex05-script.js"></script>
+        </head>
+        <body>
+            <header class="site-header">
+                <h1>
+                    Product Order Calculator
+                </h1>
+                <main class="container">
+                    <form id="orderForm">
+                        <label for="product">Select Product:</label>
+                            <select id="product" name="product" required>
+                                <option value="laptop">laptop - $999.99</option>
+                                <option value="tablet">tablet - $499.99</option>
+                                <option value="phone">phone - $699.99</option>
+                                <option value="monitor">monitor - $299.99</option>
+                            </select>
+                        <label for="quantity">Quantity:</label>
+                             <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                        <label for="discount">Discount Code (optional):</label>
+                             <input type="text" id="discount" name="discount" placeholder="Enter code">
+                        <button type="submit">Calculate Total</button>
+                    </form>
+                        <div id="results" class="results-hidden">
+                            <h2>Order Summary</h2>
+                            <div class="result-row">
+                                <span class="label">Product:</span>
+                                <span id="resultProduct" class="value"></span>
+                                <span class="label">Subtotal:</span>
+                                <span id="resultSubtotal" class="value"></span>
+                                <span class="label">Discount:</span>
+                                <span id="resultDiscount" class="value"></span>
+                                <span class="label">Tax:</span>
+                                <span id="resultTax" class="value"></span>
+                                <span class="total-row">Total:</span>
+                                <span id="resultTotal" class="value"></span>
+                        </div>
+                        <noscript>
+                            <p>JavaScript is required to use this application. Please enable JavaScript in your browser settings.</p>
+                        </noscript>
+                </main>
+                <footer class="site-footer">
+                    <p>
+                        Richard Walker
+                        Web Development COSC 2328-1
+                    </p>
+                </footer>
+        </body>
+    </html>
