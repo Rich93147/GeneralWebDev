@@ -1,0 +1,43 @@
+/* ic17-style.css */
+.status.error {
+color: var(--warning);
+}
+.status.success {
+color: var(--accent-2);
+}
+.choice {
+display: block;
+padding: 0.5rem 0.6rem;
+margin: 0.35rem 0;
+border-radius: 8px;
+border: 1px solid var(--border);
+background: #0d1526;
+}
+.choice.correct {
+border-color: #2f6f3f;
+background: rgba(126, 231, 135, 0.1);
+}
+.choice.incorrect {
+border-color: #6f2f2f;
+background: rgba(255, 107, 107, 0.08);
+}
+.list {
+list-style: none;
+padding: 0;
+margin: 0.25rem 0;
+}
+.list li {
+display: flex;
+justify-content: space-between;
+padding: 0.4rem 0.2rem;
+border-bottom: 1px dashed #1c2740;
+}
+.list li:last-child {
+border-bottom: none;
+}
+.site-footer {
+padding: 1rem 1.5rem;
+border-top: 1px solid var(--border);
+color: var(--muted);
+text-align: center;
+}

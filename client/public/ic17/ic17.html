@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ic[17] — Trivia Arena: Speed Quiz</title>
+  <link rel="stylesheet" href="css/ic17-style.css" />
+  <!-- React (development) + ReactDOM + Babel for in-class JSX; replace with production build post-class -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <!--
+    Title: ic[17] — Trivia Arena: Speed Quiz with Live Leaderboard
+    Course: COSC 2328 – <your section> – Professor McCurry
+    Implemented by: <Your Name>
+  -->
+  <header class="site-header">
+    <h1>Trivia Arena</h1>
+    <div class="subtitle">Async/Await • Web APIs • Web Storage • CORS</div>
+  </header>
+
+  <main class="container">
+    <section class="profile card">
+      <h2>Profile Settings</h2>
+      <div id="profile-root" aria-live="polite"></div>
+    </section>
+
+    <section class="quiz card">
+      <h2>Question Panel</h2>
+      <div id="question-root" aria-live="polite"></div>
+    </section>
+
+    <section class="leaderboard card">
+      <h2>Live Leaderboard</h2>
+      <div id="leaderboard-root" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>ic[17] — Built for Chapter 10 concepts: Promises, async/await, Web APIs, CORS, Web Storage</small>
+  </footer>
+
+<!-- Load scaffold first (provides structure and utilities) -->
+<script type="text/babel" src="js/ic17-scaffold.js"></script>
+
+
+<!-- Load student implementation second (completes TODOs) -->
+<script type="text/babel" src="js/ic17-script.js" defer></script>
+
+</body>
+</body>
+</html>
