@@ -4,9 +4,12 @@
     "description": "Local web server for IC 1",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "start:ic21": "node app-ic21.js"
     },
     "dependencies": {
-        "express": "^4.15.2"
+        "dotenv": "^17.3.1",
+        "express": "^4.15.2",
+        "sqlite3": "^6.0.1"
     }
 }

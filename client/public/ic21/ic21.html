@@ -1,0 +1,97 @@
+<!-- IC21 – COSC 2328-<your section number> – Professor McCurry -->
+<!-- Implemented by: Your Full Name -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IC21 – Node &amp; Database Integration</title>
+  <link rel="stylesheet" href="css/ic21-style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-logo">⚓</div>
+      <div class="header-text">
+        <h1>Voyage Crew Registry</h1>
+        <p class="subtitle">COSC 2328 · IC21 · Node &amp; Database Integration</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════════ -->
+  <main class="main-content">
+
+    <!-- ── PART 2: All Students Section ── -->
+    <section class="card" id="section-all-students">
+      <div class="card-header">
+        <h2>👥 All Students</h2>
+        <p class="card-description">
+          Loaded from <code>GET /api/ic21/students</code>
+        </p>
+      </div>
+      <div class="card-body">
+        <!-- Student list will be injected here by ic21-script.js -->
+        <ul id="student-list" class="student-list">
+          <li class="placeholder-item">Waiting for data…</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── PART 3: Single Student Lookup Section ── -->
+    <section class="card" id="section-single-student">
+      <div class="card-header">
+        <h2>🔍 Student Detail Lookup</h2>
+        <p class="card-description">
+          Calls <code>GET /api/ic21/students/:id</code> with a prepared statement
+        </p>
+      </div>
+      <div class="card-body">
+        <div class="lookup-controls">
+          <label for="student-id-input">Enter Student ID:</label>
+          <input
+            type="number"
+            id="student-id-input"
+            placeholder="e.g. 1"
+            min="1"
+          />
+          <button id="lookup-btn" class="btn-primary">Look Up</button>
+        </div>
+
+        <!-- Detail card rendered here by ic21-script.js -->
+        <div id="student-detail" class="student-detail hidden">
+          <table class="detail-table">
+            <tbody>
+              <tr><th>ID</th>           <td id="detail-id"></td></tr>
+              <tr><th>First Name</th>   <td id="detail-first"></td></tr>
+              <tr><th>Last Name</th>    <td id="detail-last"></td></tr>
+              <tr><th>Classification</th><td id="detail-class"></td></tr>
+              <tr><th>Major</th>        <td id="detail-major"></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p id="student-not-found" class="not-found-msg hidden">
+          ⚠️ No student found with that ID.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <p>COSC 2328 · Web Development · Professor McCurry</p>
+  </footer>
+
+  <script src="js/ic21-script.js"></script>
+</body>
+</html>

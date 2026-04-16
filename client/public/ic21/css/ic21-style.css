@@ -1,0 +1,271 @@
+/* ============================================================
+   IC21 – COSC 2328 – Professor McCurry
+   ic21.css  |  Node & Database Integration
+   ============================================================ */
+
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy:        #1a2b4a;
+  --navy-dark:   #0f1c33;
+  --teal:        #2a7f8f;
+  --teal-light:  #3da4b5;
+  --gold:        #d4a535;
+  --white:       #ffffff;
+  --off-white:   #f5f7fa;
+  --border:      #dce3ed;
+  --text-dark:   #1e2a3a;
+  --text-mid:    #4a5568;
+  --text-light:  #718096;
+  --success:     #2f855a;
+  --error:       #c53030;
+  --radius:      8px;
+  --shadow:      0 2px 12px rgba(26, 43, 74, 0.10);
+  --shadow-lg:   0 6px 24px rgba(26, 43, 74, 0.16);
+  --font-main:   'Segoe UI', system-ui, sans-serif;
+  --font-mono:   'Consolas', 'Courier New', monospace;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Site Header ── */
+.site-header {
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.header-logo {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.header-text h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--white);
+}
+
+.header-text .subtitle {
+  font-size: 0.85rem;
+  color: var(--teal-light);
+  margin-top: 0.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* ── Main Content ── */
+.main-content {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+  padding: 1rem 1.5rem;
+}
+
+.card-header h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.card-description {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.75);
+  margin-top: 0.25rem;
+}
+
+.card-description code {
+  font-family: var(--font-mono);
+  background: rgba(255,255,255,0.15);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.78rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* ── Student List (Part 2) ── */
+.student-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.student-list li {
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--teal);
+  background: var(--off-white);
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  transition: background 0.15s;
+}
+
+.student-list li:hover {
+  background: #e8f4f7;
+}
+
+.placeholder-item {
+  color: var(--text-light) !important;
+  font-style: italic;
+  border-left-color: var(--border) !important;
+}
+
+/* ── Lookup Controls (Part 3) ── */
+.lookup-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.lookup-controls label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-mid);
+  white-space: nowrap;
+}
+
+.lookup-controls input[type="number"] {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  width: 120px;
+  color: var(--text-dark);
+  transition: border-color 0.2s;
+}
+
+.lookup-controls input[type="number"]:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover  { background: var(--teal-light); }
+.btn-primary:active { transform: scale(0.97); }
+
+/* ── Student Detail Table (Part 3) ── */
+.student-detail {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detail-table th,
+.detail-table td {
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.detail-table th {
+  background: var(--off-white);
+  color: var(--text-mid);
+  font-weight: 600;
+  width: 38%;
+}
+
+.detail-table td {
+  color: var(--text-dark);
+}
+
+.detail-table tr:last-child th,
+.detail-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Not Found Message ── */
+.not-found-msg {
+  background: #fff5f5;
+  color: var(--error);
+  border: 1px solid #fed7d7;
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ── Utility ── */
+.hidden { display: none !important; }
+
+/* ── Site Footer ── */
+.site-footer {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.55);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .header-inner   { flex-direction: column; text-align: center; }
+  .header-logo    { font-size: 2rem; }
+  .header-text h1 { font-size: 1.4rem; }
+  .lookup-controls { flex-direction: column; align-items: flex-start; }
+  .lookup-controls input[type="number"] { width: 100%; }
+  .btn-primary    { width: 100%; }
+}
