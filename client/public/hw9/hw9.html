@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HW9 - Monster Arena</title>
+  <link rel="stylesheet" href="css/hw9-style.css" />
+</head>
+<body>
+  <header>
+    <h1>Monster Arena Registry</h1>
+    <p>HW9 - Node, SQLite, routes, and client-side fetch integration.</p>
+  </header>
+
+  <main>
+    <p id="status-message" class="status" hidden></p>
+
+    <section>
+      <h2>Roster</h2>
+      <div id="roster"></div>
+    </section>
+
+    <section>
+      <h2>Monster Lookup</h2>
+      <label for="monster-id-input">Enter Monster ID</label>
+      <input type="number" id="monster-id-input" min="1" placeholder="e.g. 1" />
+      <button id="lookup-btn" type="button">Look Up</button>
+
+      <div id="monster-detail" class="battle-results hidden">
+        <table>
+          <tbody>
+            <tr><th>ID</th><td id="detail-id"></td></tr>
+            <tr><th>Name</th><td id="detail-name"></td></tr>
+            <tr><th>Species</th><td id="detail-species"></td></tr>
+            <tr><th>Attack</th><td id="detail-attack"></td></tr>
+            <tr><th>Defense</th><td id="detail-defense"></td></tr>
+            <tr><th>HP</th><td id="detail-hp"></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p id="monster-not-found" class="status error hidden">Monster not found.</p>
+    </section>
+
+    <section>
+      <h2>Recruit a Monster</h2>
+      <form id="recruit-form">
+        <label>Name<input type="text" name="name" required /></label>
+        <label>Species<input type="text" name="species" required /></label>
+        <label>Attack<input type="number" name="attack" min="0" required /></label>
+        <label>Defense<input type="number" name="defense" min="0" required /></label>
+        <label>HP<input type="number" name="hp" min="0" required /></label>
+        <button type="submit">Recruit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Retire a Monster</h2>
+      <form id="retire-form">
+        <label>Monster ID<input type="number" id="retire-id-input" min="1" required /></label>
+        <button type="submit">Retire</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Battle Arena</h2>
+      <form id="battle-form">
+        <button type="submit">Battle!</button>
+      </form>
+      <div id="battle-results" class="battle-results"></div>
+    </section>
+  </main>
+
+  <script src="js/js9-script.js"></script>
+</body>
+</html>

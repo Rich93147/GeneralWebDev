@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EX07: React Clicker Quest</title>
+	<link rel="stylesheet" href="css/hs7-style.css">
+</head>
+<body>
+	<main class="layout-plan" aria-label="React Clicker Quest structure plan" hidden>
+		<!-- Header section  -->
+		<section id="header-" class="panel">
+			<h2>Header </h2>
+			<form class="name-form" aria-label="Player Name Form ">
+				<label for="player-name-input">Player Name</label>
+				<input id="player-name-input" name="playerName" type="text" placeholder="Enter your name" disabled>
+				<button type="button" disabled>Save Name</button>
+			</form>
+		</section>
+
+		<!-- Stats section  -->
+		<section id="stats-" class="panel">
+			<h2>Stats </h2>
+		</section>
+
+		<!-- Click area  -->
+		<section id="clicker-" class="panel">
+			<h2>Clicker </h2>
+		</section>
+
+		<!-- Shop section  -->
+		<section id="shop-" class="panel">
+			<h2>Shop </h2>
+		</section>
+
+		<!-- Achievements section  -->
+		<section id="achievements-" class="panel">
+			<h2>Achievements </h2>
+		</section>
+	</main>
+
+	<div id="root"></div>
+
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel" src="js/hw7-script.js"></script>
+</body>
+</html>

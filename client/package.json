@@ -5,7 +5,8 @@
     "main": "app.js",
     "scripts": {
         "start": "node app.js",
-        "start:ic21": "node app-ic21.js"
+        "start:ic21": "node app-ic21.js",
+        "start:hw9": "node app-hw9.js"
     },
     "dependencies": {
         "dotenv": "^17.3.1",
