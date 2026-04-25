@@ -11,6 +11,6 @@ app.get('/', (req,res) => {
 });
 
 //Start the server
-app.listen(8080, () => {
-    console.log('Chat we\'re live at http://localhost:8080');
+app.listen(3000, () => {
+    console.log('Chat we\'re live at http://localhost:3000');
 });
