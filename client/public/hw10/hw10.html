@@ -1,0 +1,73 @@
+<!-- ============================================
+     HW10 Monster Arena — Starter HTML
+     COSC 2328 Web Development
+     Professor McCurry
+
+     YOUR NAME:
+     YOUR SECTION:
+     ============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Arena</title>
+    <link rel="stylesheet" href="css/hw10.css">
+</head>
+<body>
+
+    <h1>Monster Arena</h1>
+
+    <!-- ── Status / Message Area ── -->
+    <p id="status"></p>
+
+    <!-- ── Monster Roster ── -->
+    <h2>Roster</h2>
+    <div id="roster">
+        <!-- Monster cards will be injected here by JavaScript -->
+    </div>
+
+    <!-- ── Recruit Form ── -->
+    <h2>Recruit a Monster</h2>
+    <form id="recruit-form">
+        <label>Name:
+            <input type="text" name="name" required>
+        </label>
+        <label>Species:
+            <input type="text" name="species" required>
+        </label>
+        <label>Attack:
+            <input type="number" name="attack" required>
+        </label>
+        <label>Defense:
+            <input type="number" name="defense" required>
+        </label>
+        <label>HP:
+            <input type="number" name="hp" required>
+        </label>
+        <button type="submit">Recruit</button>
+    </form>
+
+    <!-- ── Retire Control ── -->
+    <h2>Retire a Monster</h2>
+    <div class="retire-control">
+        <label>Monster ID:
+            <input type="number" id="retire-id">
+        </label>
+        <button id="retire-btn">Retire</button>
+    </div>
+
+    <!-- ── Battle Arena ── -->
+    <h2>Battle Arena</h2>
+    <div class="battle-section">
+        <button id="battle-btn">Battle!</button>
+        <div id="battle-results">
+            <!-- Battle results will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- ── Client-Side JavaScript ── -->
+    <script src="js/hw10-script.js"></script>
+
+</body>
+</html>
